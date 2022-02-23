@@ -15,3 +15,25 @@ Choose Enter System Out-of-Box Experience (OOBE) and tick the Generalize checkbo
 
 
 ```
+
+
+# Troubleshooting 
+
+### if issue persist then do following
+
+
+```
+
+To turn BitLocker off, launch Command Prompt as an administrator from the Start Menu, type the following commands, and hit Enter.
+
+manage-bde -status
+Disable-Bitlocker –MountPoint ‘C:’
+
+This will turn Bitlocker off.
+
+Now, try running Sysprep again and see if it fixes the issue.
+
+
+```
+
+
